@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate
+from django.http import HttpResponse,HttpResponseRedirect
 
 def user_login(request):                      #url for login page is home/login
     if request.method == 'POST':
